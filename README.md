@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# accordion-mystic
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Graphical control element comprising a vertically stacked list of items. Each item can be "expanded" or "collapsed" to reveal the content associated with that item.
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+Accordion-mystic is still on the development and learning stage. Feel free to give a feedback, suggestion ot advise. Animated circles are main feature of this accordion, be sure to check them out by using `MysticAccordionBackground` or `MysticAccordionCircles` components.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```sh
+yarn add accordion-mystic gsap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# or
 
-### `npm test`
+npm i accordion-mystic gsap
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Import Components
 
-### `npm run build`
+```jsx
+import {
+  MysticAccordion,
+  MysticAccordionBackground,
+  MysticAccordionCircles,
+  MysticAccordionContent,
+  MysticAccordionHeader,
+  MysticAccordionIcon,
+  MysticAccordionItem,
+  MysticAccordionTitle,
+} from 'accordion-mystic';
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `MysticAccordionBackground`: custom background.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `MysticAccordionCircles`: three animated circles for the background.
 
-### `npm run eject`
+- `MysticAccordion`: main accordion wrapper.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `MysticAccordionItem`: accordion item wrapper, manages state of a single item.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `MysticAccordionHeader`: triggers opening/closing of a single accordion item.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `MysticAccordionTitle`: displays Title for accordion item, takes props as well as children.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `MysticAccordionIcon`: an animated arrow icon.
 
-## Learn More
+- `MysticAccordionContent`: the main content for the accordion item.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Accordion is closed by default, each item can be toggled
 
-### Code Splitting
+**Note 🚨** Each MysticAccordionHeader must be passed an index prop
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```jsx
+<MysticAccordion>
+  <MysticAccordionItem>
+    <MysticAccordionHeader index={0}>
+      <MysticAccordionTitle title={'Props title 1'}>
+        Accordion title 1
+      </MysticAccordionTitle>
+      <MysticAccordionIcon />
+    </MysticAccordionHeader>
+    <MysticAccordionContent>
+      <div>
+        <p>Accordion content</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+          quidem voluptatibus. Repudiandae distinctio aperiam, laudantium sequi
+          numquam exercitationem. Saepe, doloremque. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Amet eligendi cupiditate, repellendus
+          mollitia at sed aut quaerat voluptas ex eos debitis!
+        </p>
+      </div>
+    </MysticAccordionContent>
+  </MysticAccordionItem>
+  <MysticAccordionItem>
+    <MysticAccordionHeader index={1}>
+      <MysticAccordionTitle>Accordion title 2</MysticAccordionTitle>
+      <MysticAccordionIcon />
+    </MysticAccordionHeader>
+    <MysticAccordionContent>
+      <div>
+        <p>Accordion second content</p>
+      </div>
+    </MysticAccordionContent>
+  </MysticAccordionItem>
+</MysticAccordion>
+```
 
-### Analyzing the Bundle Size
+To make multiple accordion items be visible at the same time, pass the `multipleToggle` prop
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```jsx
+<MysticAccordion multipleToggle>
+  {...}
+</MysticAccordion>
+```
 
-### Making a Progressive Web App
+To apply cube animation, pass the `cube` prop
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```jsx
+<MysticAccordion cube>
+  {...}
+</MysticAccordion>
+```
 
-### Advanced Configuration
+To apply darkMode styles, pass the `darkMode` prop
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```jsx
+<MysticAccordion darkMode>
+  {...}
+</MysticAccordion>
+```
 
-### Deployment
+To add background, wrap your content in MysticAccordionBackground, pass `darkMode` prop to apply darMode styles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```jsx
+<MysticAccordionBackground darkMode>
+  <MysticAccordion>
+    {...}
+  </MysticAccordion>
+</MysticAccordionBackground>
+```
 
-### `npm run build` fails to minify
+There is a possibility to use animated circles on the background, just add <MysticAccordionCircles /> anywhere in your components. Add `className="darkMode"` to color the circles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```jsx
+<div>
+    <MysticAccordionCircles className="darkMode"/>
+    {...}
+</div>
+```
