@@ -1,10 +1,10 @@
 # accordion-mystic
 
-Graphical control element comprising a vertically stacked list of items. Each item can be "expanded" or "collapsed" to reveal the content associated with that item.
+Graphical control element comprising a vertically stacked list of items. Each item can be "expanded" or "collapsed" to reveal the content associated with that item. Gsap is used for animations,follow this link for more information on gsap https://greensock.com/
 
 ## About
 
-Accordion-mystic is still on the development and learning stage. Feel free to give a feedback, suggestion ot advise. Animated circles are main feature of this accordion, be sure to check them out by using `MysticAccordionBackground` or `MysticAccordionCircles` components.
+Accordion-mystic is still on the development and learning stage. Feel free to give a feedback, suggestion or advise. Animated circles are main feature of this accordion, be sure to check them out by using `MysticAccordionBackground` or `MysticAccordionCircles` components.
 
 ## Installation
 
