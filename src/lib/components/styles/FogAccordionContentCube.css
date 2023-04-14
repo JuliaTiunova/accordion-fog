@@ -1,0 +1,81 @@
+.cube.fog-accordion-content {
+  width: 100%;
+  height: 0px;
+  position: relative;
+  z-index: 1;
+  perspective: 600px;
+  transition: 1s ease-in-out;
+  transform: translateZ(-100px) rotateY(0deg);
+}
+
+.opened .cube.fog-accordion-content {
+  height: 200px;
+}
+
+.cube.fog-accordion-content-wrapper {
+  height: 0px;
+}
+
+.cube.fog-accordion-box {
+  transform: translateZ(-100px) rotateX(90deg);
+  width: 100%;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.cube.fog-accordion-face {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.cube.fog-accordion-face-front {
+  opacity: 0;
+  background-color: white;
+  border: 1px solid #333;
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+.darkMode .cube.fog-accordion-face-front {
+  background-color: #111;
+  border: 1px solid #fff;
+}
+
+.cube.fog-accordion-face-bottom {
+  opacity: 0;
+  background-color: rgba(245, 245, 245, 0.6);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+.darkMode .cube.fog-accordion-face-bottom {
+  background-color: rgba(37, 32, 33, 0.6);
+}
+
+/* scrollbar for content */
+.cube.fog-accordion-face::-webkit-scrollbar {
+  width: 10px;
+}
+
+.cube.fog-accordion-face::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cube.fog-accordion-face::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border-radius: 5px;
+}
+
+.cube.fog-accordion-face::-webkit-scrollbar-thumb:hover {
+  background: #d0d0d0;
+}
+
+.darkMode .cube.fog-accordion-face::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+.darkMode .cube.fog-accordion-face::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}

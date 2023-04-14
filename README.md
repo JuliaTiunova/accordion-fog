@@ -1,70 +1,70 @@
-# accordion-mystic
+# accordion-fog
 
 Graphical control element comprising a vertically stacked list of items. Each item can be "expanded" or "collapsed" to reveal the content associated with that item. Gsap is used for animations,follow this link for more information on gsap https://greensock.com/
 
 ## About
 
-Accordion-mystic is still on the development and learning stage. Feel free to give a feedback, suggestion or advise. Animated circles are main feature of this accordion, be sure to check them out by using `MysticAccordionBackground` or `MysticAccordionCircles` components.
+Accordion-fog is still on the development and learning stage. Feel free to give a feedback, suggestion or advise. Animated circles are main feature of this accordion, be sure to check them out by using `FogAccordionBackground` or `FogAccordionCircles` components.
 
 ## Installation
 
 ```sh
-yarn add accordion-mystic gsap
+yarn add accordion-fog
 
 # or
 
-npm i accordion-mystic gsap
+npm i accordion-fog
 ```
 
 ## Import Components
 
 ```jsx
 import {
-  MysticAccordion,
-  MysticAccordionBackground,
-  MysticAccordionCircles,
-  MysticAccordionContent,
-  MysticAccordionHeader,
-  MysticAccordionIcon,
-  MysticAccordionItem,
-  MysticAccordionTitle,
-} from 'accordion-mystic';
+  FogAccordion,
+  FogAccordionBackground,
+  FogAccordionCircles,
+  FogAccordionContent,
+  FogAccordionHeader,
+  FogAccordionIcon,
+  FogAccordionItem,
+  FogAccordionTitle,
+} from 'accordion-fog';
 ```
 
 ## Components
 
-- `MysticAccordionBackground`: custom background.
+- `FogAccordionBackground`: custom background.
 
-- `MysticAccordionCircles`: three animated circles for the background.
+- `FogAccordionCircles`: three animated circles for the background.
 
-- `MysticAccordion`: main accordion wrapper.
+- `FogAccordion`: main accordion wrapper.
 
-- `MysticAccordionItem`: accordion item wrapper, manages state of a single item.
+- `FogAccordionItem`: accordion item wrapper, manages state of a single item.
 
-- `MysticAccordionHeader`: triggers opening/closing of a single accordion item.
+- `FogAccordionHeader`: triggers opening/closing of a single accordion item.
 
-- `MysticAccordionTitle`: displays Title for accordion item, takes props as well as children.
+- `FogAccordionTitle`: displays Title for accordion item, takes props as well as children.
 
-- `MysticAccordionIcon`: an animated arrow icon.
+- `FogAccordionIcon`: an animated arrow icon.
 
-- `MysticAccordionContent`: the main content for the accordion item.
+- `FogAccordionContent`: the main content for the accordion item.
 
 ## Usage
 
 Accordion is closed by default, each item can be toggled
 
-**Note 🚨** Each MysticAccordionHeader must be passed an index prop
+**Note 🚨** Each FogAccordionHeader must be passed an index prop
 
 ```jsx
-<MysticAccordion>
-  <MysticAccordionItem>
-    <MysticAccordionHeader index={0}>
-      <MysticAccordionTitle title={'Props title 1'}>
+<FogAccordion>
+  <FogAccordionItem>
+    <FogAccordionHeader index={0}>
+      <FogAccordionTitle title={'Props title 1'}>
         Accordion title 1
-      </MysticAccordionTitle>
-      <MysticAccordionIcon />
-    </MysticAccordionHeader>
-    <MysticAccordionContent>
+      </FogAccordionTitle>
+      <FogAccordionIcon />
+    </FogAccordionHeader>
+    <FogAccordionContent>
       <div>
         <p>Accordion content</p>
         <p>
@@ -75,61 +75,61 @@ Accordion is closed by default, each item can be toggled
           mollitia at sed aut quaerat voluptas ex eos debitis!
         </p>
       </div>
-    </MysticAccordionContent>
-  </MysticAccordionItem>
-  <MysticAccordionItem>
-    <MysticAccordionHeader index={1}>
-      <MysticAccordionTitle>Accordion title 2</MysticAccordionTitle>
-      <MysticAccordionIcon />
-    </MysticAccordionHeader>
-    <MysticAccordionContent>
+    </FogAccordionContent>
+  </FogAccordionItem>
+  <FogAccordionItem>
+    <FogAccordionHeader index={1}>
+      <FogAccordionTitle>Accordion title 2</FogAccordionTitle>
+      <FogAccordionIcon />
+    </FogAccordionHeader>
+    <FogAccordionContent>
       <div>
         <p>Accordion second content</p>
       </div>
-    </MysticAccordionContent>
-  </MysticAccordionItem>
-</MysticAccordion>
+    </FogAccordionContent>
+  </FogAccordionItem>
+</FogAccordion>
 ```
 
 To make multiple accordion items be visible at the same time, pass the `multipleToggle` prop
 
 ```jsx
-<MysticAccordion multipleToggle>
+<FogAccordion multipleToggle>
   {...}
-</MysticAccordion>
+</FogAccordion>
 ```
 
 To apply cube animation, pass the `cube` prop
 
 ```jsx
-<MysticAccordion cube>
+<FogAccordion cube>
   {...}
-</MysticAccordion>
+</FogAccordion>
 ```
 
 To apply darkMode styles, pass the `darkMode` prop
 
 ```jsx
-<MysticAccordion darkMode>
+<FogAccordion darkMode>
   {...}
-</MysticAccordion>
+</FogAccordion>
 ```
 
-To add background, wrap your content in MysticAccordionBackground, pass `darkMode` prop to apply darMode styles
+To add background, wrap your content in FogAccordionBackground, pass `darkMode` prop to apply darMode styles
 
 ```jsx
-<MysticAccordionBackground darkMode>
-  <MysticAccordion>
+<FogAccordionBackground darkMode>
+  <FogAccordion>
     {...}
-  </MysticAccordion>
-</MysticAccordionBackground>
+  </FogAccordion>
+</FogAccordionBackground>
 ```
 
-There is a possibility to use animated circles on the background, just add <MysticAccordionCircles /> anywhere in your components. Add `className="darkMode"` to color the circles
+There is a possibility to use animated circles on the background, just add <FogAccordionCircles /> anywhere in your components. Add `className="darkMode"` to color the circles
 
 ```jsx
 <div>
-    <MysticAccordionCircles className="darkMode"/>
+    <FogAccordionCircles className="darkMode"/>
     {...}
 </div>
 ```

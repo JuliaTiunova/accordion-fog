@@ -1,0 +1,13 @@
+.fog-accordion-background {
+  padding: 30px;
+}
+
+.fog-accordion-background-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.darkMode.fog-accordion-background-wrapper {
+  background: linear-gradient(115deg, #17061a 0%, #030f0f 105%);
+}
