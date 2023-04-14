@@ -1,4 +1,5 @@
 .reg.fog-accordion-content {
+  padding: 0 20px;
   background-color: white;
   max-height: 0;
   border: 1px solid #333;
