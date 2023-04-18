@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='App'>
       <FogAccordionBackground>
-        <FogAccordion>
+        <FogAccordion cube>
           <FogAccordionItem>
             <FogAccordionHeader index={0}>
               <FogAccordionTitle title={'Props title 1'}>
