@@ -3,60 +3,60 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "MysticAccordion", {
+Object.defineProperty(exports, "FogAccordion", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordion.default;
+    return _FogAccordion.default;
   }
 });
-Object.defineProperty(exports, "MysticAccordionBackground", {
+Object.defineProperty(exports, "FogAccordionBackground", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordionBackground.default;
+    return _FogAccordionBackground.default;
   }
 });
-Object.defineProperty(exports, "MysticAccordionCircles", {
+Object.defineProperty(exports, "FogAccordionCircles", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordionCircles.default;
+    return _FogAccordionCircles.default;
   }
 });
-Object.defineProperty(exports, "MysticAccordionContent", {
+Object.defineProperty(exports, "FogAccordionContent", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordionContent.default;
+    return _FogAccordionContent.default;
   }
 });
-Object.defineProperty(exports, "MysticAccordionHeader", {
+Object.defineProperty(exports, "FogAccordionHeader", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordionHeader.default;
+    return _FogAccordionHeader.default;
   }
 });
-Object.defineProperty(exports, "MysticAccordionIcon", {
+Object.defineProperty(exports, "FogAccordionIcon", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordionIcon.default;
+    return _FogAccordionIcon.default;
   }
 });
-Object.defineProperty(exports, "MysticAccordionItem", {
+Object.defineProperty(exports, "FogAccordionItem", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordionItem.default;
+    return _FogAccordionItem.default;
   }
 });
-Object.defineProperty(exports, "MysticAccordionTitle", {
+Object.defineProperty(exports, "FogAccordionTitle", {
   enumerable: true,
   get: function get() {
-    return _MysticAccordionTitle.default;
+    return _FogAccordionTitle.default;
   }
 });
-var _MysticAccordion = _interopRequireDefault(require("./components/MysticAccordion"));
-var _MysticAccordionBackground = _interopRequireDefault(require("./components/MysticAccordionBackground"));
-var _MysticAccordionCircles = _interopRequireDefault(require("./components/MysticAccordionCircles"));
-var _MysticAccordionContent = _interopRequireDefault(require("./components/MysticAccordionContent"));
-var _MysticAccordionHeader = _interopRequireDefault(require("./components/MysticAccordionHeader"));
-var _MysticAccordionIcon = _interopRequireDefault(require("./components/MysticAccordionIcon"));
-var _MysticAccordionItem = _interopRequireDefault(require("./components/MysticAccordionItem"));
-var _MysticAccordionTitle = _interopRequireDefault(require("./components/MysticAccordionTitle"));
+var _FogAccordion = _interopRequireDefault(require("./components/FogAccordion"));
+var _FogAccordionBackground = _interopRequireDefault(require("./components/FogAccordionBackground"));
+var _FogAccordionCircles = _interopRequireDefault(require("./components/FogAccordionCircles"));
+var _FogAccordionContent = _interopRequireDefault(require("./components/FogAccordionContent"));
+var _FogAccordionHeader = _interopRequireDefault(require("./components/FogAccordionHeader"));
+var _FogAccordionIcon = _interopRequireDefault(require("./components/FogAccordionIcon"));
+var _FogAccordionItem = _interopRequireDefault(require("./components/FogAccordionItem"));
+var _FogAccordionTitle = _interopRequireDefault(require("./components/FogAccordionTitle"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -1,0 +1,12 @@
+.reg.fog-accordion-content {
+  padding: 20px;
+  background-color: white;
+  max-height: 0;
+  border: 1px solid #333;
+  opacity: 0;
+}
+
+.darkMode .reg.fog-accordion-content {
+  background-color: #111;
+  border: 1px solid #fff;
+}
