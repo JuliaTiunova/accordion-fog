@@ -1,6 +1,6 @@
 # accordion-fog
 
-Graphical control element comprising a vertically stacked list of items. Each item can be "expanded" or "collapsed" to reveal the content associated with that item. Gsap is used for animations,follow this link for more information on gsap https://greensock.com/
+Graphical control element comprising a vertically stacked list of items. Each item can be "expanded" or "collapsed" to reveal the content associated with that item. Gsap is used for animations, follow this link for more information on gsap https://greensock.com/
 
 ## About
 
@@ -134,7 +134,7 @@ To add background, wrap your content in FogAccordionBackground, pass `darkMode` 
 </FogAccordionBackground>
 ```
 
-There is a possibility to use animated circles on the background, just add <FogAccordionCircles /> anywhere in your components. Add `className="darkMode"` to color the circles
+There is a possibility to use animated circles on the background, just add `FogAccordionCircles` anywhere in your components. Add `className="darkMode"` to color the circles
 
 ```jsx
 <div>
