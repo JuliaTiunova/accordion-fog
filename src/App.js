@@ -12,7 +12,7 @@ import {
 function App() {
   return (
     <div className='App'>
-      <FogAccordionBackground darkMode>
+      <FogAccordionBackground>
         <FogAccordion cube>
           <FogAccordionItem>
             <FogAccordionHeader index={0}>
