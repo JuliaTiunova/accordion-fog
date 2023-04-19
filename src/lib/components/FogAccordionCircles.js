@@ -15,7 +15,7 @@ const fogCircles = [
   },
 ];
 
-export default function FogAccordionCircles() {
+export default function FogAccordionCircles(props) {
   const timeline = useRef();
 
   useLayoutEffect(() => {
@@ -54,7 +54,7 @@ export default function FogAccordionCircles() {
     <div>
       {fogCircles.map((fogCircle) => (
         <div
-          className={`fog-circle ${fogCircle.class}`}
+          className={`fog-circle ${fogCircle.class} ${props.className}`}
           key={fogCircle.class}
         ></div>
       ))}

@@ -6,6 +6,10 @@ Graphical control element comprising a vertically stacked list of items. Each it
 
 Accordion-fog is still on the development and learning stage. Feel free to give a feedback, suggestion or advise. Animated circles are main feature of this accordion, be sure to check them out by using `FogAccordionBackground` or `FogAccordionCircles` components.
 
+## Live example
+
+Checkout cube animated accordion by following <a href="https://juliatiunova.github.io/accordion-fog/" title="accordion-fog" target="_blank">this link</a>
+
 ## Installation
 
 ```sh
