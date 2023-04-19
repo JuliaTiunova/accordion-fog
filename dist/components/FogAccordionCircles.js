@@ -19,7 +19,7 @@ const fogCircles = [{
 }, {
   class: 'fog-circle-three'
 }];
-function FogAccordionCircles() {
+function FogAccordionCircles(props) {
   const timeline = (0, _react.useRef)();
   (0, _react.useLayoutEffect)(() => {
     (function triggerAnimation() {
@@ -46,7 +46,7 @@ function FogAccordionCircles() {
     })();
   });
   return /*#__PURE__*/_react.default.createElement("div", null, fogCircles.map(fogCircle => /*#__PURE__*/_react.default.createElement("div", {
-    className: "fog-circle ".concat(fogCircle.class),
+    className: "fog-circle ".concat(fogCircle.class, " ").concat(props.className),
     key: fogCircle.class
   })));
 }
