@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles/FogAccordionItem.css';
 
-export default function FogAccordionItem(props) {
+export function FogAccordionItem(props) {
   const [clicked, setClicked] = useState(false);
 
   function toggleMultiplefogItems() {

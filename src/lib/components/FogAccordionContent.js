@@ -3,7 +3,7 @@ import './styles/FogAccordionContentCube.css';
 import './styles/FogAccordionContent.css';
 import { applyCubeAnimation, applyRegularAnimation } from './animationHelpers';
 
-export default function FogAccordionContent(props) {
+export function FogAccordionContent(props) {
   const timeline = useRef();
   const opened = props.opened;
 

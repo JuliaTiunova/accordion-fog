@@ -1,14 +1,13 @@
 import React from 'react';
 import './styles/FogAccordionHeader.css';
 
-const FogAccordionHeader = React.forwardRef((props, ref) => (
-  <div
-    className={`fog-accordion-header`}
-    ref={ref}
-    onClick={() => props.onTogglefogItem(props.index)}
-  >
-    {props.children}
-  </div>
-));
-
-export default FogAccordionHeader;
+export function FogAccordionHeader(props) {
+  return (
+    <div
+      className={`fog-accordion-header`}
+      onClick={() => props.onTogglefogItem(props.index)}
+    >
+      {props.children}
+    </div>
+  );
+}

@@ -6,57 +6,56 @@ Object.defineProperty(exports, "__esModule", {
 Object.defineProperty(exports, "FogAccordion", {
   enumerable: true,
   get: function get() {
-    return _FogAccordion.default;
+    return _FogAccordion.FogAccordion;
   }
 });
 Object.defineProperty(exports, "FogAccordionBackground", {
   enumerable: true,
   get: function get() {
-    return _FogAccordionBackground.default;
+    return _FogAccordionBackground.FogAccordionBackground;
   }
 });
 Object.defineProperty(exports, "FogAccordionCircles", {
   enumerable: true,
   get: function get() {
-    return _FogAccordionCircles.default;
+    return _FogAccordionCircles.FogAccordionCircles;
   }
 });
 Object.defineProperty(exports, "FogAccordionContent", {
   enumerable: true,
   get: function get() {
-    return _FogAccordionContent.default;
+    return _FogAccordionContent.FogAccordionContent;
   }
 });
 Object.defineProperty(exports, "FogAccordionHeader", {
   enumerable: true,
   get: function get() {
-    return _FogAccordionHeader.default;
+    return _FogAccordionHeader.FogAccordionHeader;
   }
 });
 Object.defineProperty(exports, "FogAccordionIcon", {
   enumerable: true,
   get: function get() {
-    return _FogAccordionIcon.default;
+    return _FogAccordionIcon.FogAccordionIcon;
   }
 });
 Object.defineProperty(exports, "FogAccordionItem", {
   enumerable: true,
   get: function get() {
-    return _FogAccordionItem.default;
+    return _FogAccordionItem.FogAccordionItem;
   }
 });
 Object.defineProperty(exports, "FogAccordionTitle", {
   enumerable: true,
   get: function get() {
-    return _FogAccordionTitle.default;
+    return _FogAccordionTitle.FogAccordionTitle;
   }
 });
-var _FogAccordion = _interopRequireDefault(require("./components/FogAccordion"));
-var _FogAccordionBackground = _interopRequireDefault(require("./components/FogAccordionBackground"));
-var _FogAccordionCircles = _interopRequireDefault(require("./components/FogAccordionCircles"));
-var _FogAccordionContent = _interopRequireDefault(require("./components/FogAccordionContent"));
-var _FogAccordionHeader = _interopRequireDefault(require("./components/FogAccordionHeader"));
-var _FogAccordionIcon = _interopRequireDefault(require("./components/FogAccordionIcon"));
-var _FogAccordionItem = _interopRequireDefault(require("./components/FogAccordionItem"));
-var _FogAccordionTitle = _interopRequireDefault(require("./components/FogAccordionTitle"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _FogAccordion = require("./components/FogAccordion");
+var _FogAccordionBackground = require("./components/FogAccordionBackground");
+var _FogAccordionCircles = require("./components/FogAccordionCircles");
+var _FogAccordionContent = require("./components/FogAccordionContent");
+var _FogAccordionHeader = require("./components/FogAccordionHeader");
+var _FogAccordionIcon = require("./components/FogAccordionIcon");
+var _FogAccordionItem = require("./components/FogAccordionItem");
+var _FogAccordionTitle = require("./components/FogAccordionTitle");

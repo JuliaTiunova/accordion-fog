@@ -3,7 +3,7 @@ import './styles/FogAccordionIcon.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
-export default function FogAccordionIcon(props) {
+export function FogAccordionIcon(props) {
   return (
     <button className='fog-accordion-button'>
       <span className='fog-accordion-icon '>
