@@ -5,7 +5,7 @@ require("core-js/modules/web.dom-collections.iterator.js");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = FogAccordionContent;
+exports.FogAccordionContent = FogAccordionContent;
 var _react = _interopRequireWildcard(require("react"));
 require("./styles/FogAccordionContentCube.css");
 require("./styles/FogAccordionContent.css");

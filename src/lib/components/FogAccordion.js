@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './styles/FogAccordion.css';
 
-export default function FogAccordion(props) {
+export function FogAccordion(props) {
   const { children, cube, multipleToggle } = props;
   const [clicked, setClicked] = useState('');
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/FogAccordionBackground.css';
-import FogAccordionCircles from './FogAccordionCircles';
+import { FogAccordionCircles } from './FogAccordionCircles';
 
-export default function FogAccordionBackground(props) {
+export function FogAccordionBackground(props) {
   return (
     <div
       className={`fog-accordion-background-wrapper ${

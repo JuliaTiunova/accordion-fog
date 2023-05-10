@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = FogAccordionIcon;
+exports.FogAccordionIcon = FogAccordionIcon;
 var _react = _interopRequireDefault(require("react"));
 require("./styles/FogAccordionIcon.css");
 var _reactFontawesome = require("@fortawesome/react-fontawesome");
