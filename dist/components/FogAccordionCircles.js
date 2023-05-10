@@ -5,7 +5,7 @@ require("core-js/modules/web.dom-collections.iterator.js");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = FogAccordionCircles;
+exports.FogAccordionCircles = FogAccordionCircles;
 var _react = _interopRequireWildcard(require("react"));
 require("./styles/FogAccordionCircles.css");
 var _gsap = _interopRequireDefault(require("gsap"));

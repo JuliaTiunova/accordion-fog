@@ -4,7 +4,7 @@ require("core-js/modules/es.weak-map.js");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = FogAccordionItem;
+exports.FogAccordionItem = FogAccordionItem;
 require("core-js/modules/web.dom-collections.iterator.js");
 var _react = _interopRequireWildcard(require("react"));
 require("./styles/FogAccordionItem.css");

@@ -15,7 +15,7 @@ const fogCircles = [
   },
 ];
 
-export default function FogAccordionCircles(props) {
+export function FogAccordionCircles(props) {
   const timeline = useRef();
 
   useLayoutEffect(() => {
