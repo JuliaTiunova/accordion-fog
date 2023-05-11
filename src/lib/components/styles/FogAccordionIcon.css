@@ -11,10 +11,17 @@
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
 }
-.darkMode .fog-accordion-icon svg {
-  color: white;
-}
 
 .opened .fog-accordion-icon svg {
   transform: rotate(180deg);
+}
+
+.colorFilled .fog-accordion-icon svg {
+  color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .darkMode .fog-accordion-icon svg {
+    color: white;
+  }
 }

@@ -10,7 +10,14 @@
   opacity: 0;
 }
 
-.darkMode .reg.fog-accordion-content {
+.colorFilled .reg.fog-accordion-content {
   background-color: #111;
   border: 1px solid #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .darkMode .reg.fog-accordion-content {
+    background-color: #111;
+    border: 1px solid #fff;
+  }
 }

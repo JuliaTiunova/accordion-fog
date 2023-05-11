@@ -7,7 +7,7 @@ export function FogAccordionBackground(props) {
     <div
       className={`fog-accordion-background-wrapper ${
         props.darkMode ? 'darkMode' : ''
-      }`}
+      } ${props.colorFilled ? 'colorFilled' : ''}`}
     >
       <div className='fog-accordion-background'>{props.children}</div>
       <FogAccordionCircles />

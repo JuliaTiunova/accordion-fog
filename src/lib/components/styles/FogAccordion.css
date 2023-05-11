@@ -9,7 +9,14 @@
   z-index: 1;
 }
 
-.darkMode .fog-accordion,
-.darkMode.fog-accordion {
+.colorFilled .fog-accordion,
+.colorFilled.fog-accordion {
   color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  .darkMode .fog-accordion,
+  .darkMode.fog-accordion {
+    color: white;
+  }
 }

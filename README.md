@@ -6,6 +6,10 @@ Graphical control element comprising a vertically stacked list of items. Each it
 
 Accordion-fog is still on the development and learning stage. Feel free to give a feedback, suggestion or advise. Animated circles are main feature of this accordion, be sure to check them out by using `FogAccordionBackground` or `FogAccordionCircles` components.
 
+- 0.2.12 updates:
+  light/dark theme toggle depending on preferred color scheme (with `darkMode` prop)
+  colored styles awailable with new `colorFilled` prop
+
 <table>
     <td><img src="/screen-light.png" alt='screen-light'/></td>
     <td><img src="/screen-dark.png" alt='screen-dark'/></td>
@@ -116,7 +120,15 @@ To apply cube animation, pass the `cube` prop
 </FogAccordion>
 ```
 
-To apply darkMode styles, pass the `darkMode` prop
+To apply colored styles, pass the `colorFilled` prop
+
+```jsx
+<FogAccordion colorFilled>
+  {...}
+</FogAccordion>
+```
+
+To make accordion style switch accordiong to preferred color scheme, pass the `darkMode` prop
 
 ```jsx
 <FogAccordion darkMode>
@@ -124,7 +136,7 @@ To apply darkMode styles, pass the `darkMode` prop
 </FogAccordion>
 ```
 
-To add background, wrap your content in FogAccordionBackground, pass `darkMode` prop to apply darMode styles
+To add background, wrap your content in `FogAccordionBackground`, pass `colorFilled` prop to apply styles or use `darkMode` prop to apply styles according to preferred color scheme.
 
 ```jsx
 <FogAccordionBackground darkMode>
@@ -134,11 +146,19 @@ To add background, wrap your content in FogAccordionBackground, pass `darkMode` 
 </FogAccordionBackground>
 ```
 
-There is a possibility to use animated circles on the background, just add `FogAccordionCircles` anywhere in your components. Add `className="darkMode"` to color the circles
+```jsx
+<FogAccordionBackground colorFilled>
+  <FogAccordion>
+    {...}
+  </FogAccordion>
+</FogAccordionBackground>
+```
+
+There is a possibility to use animated circles on the background, just add `FogAccordionCircles` anywhere in your components. Add `className="colorFilled"` to color the circles
 
 ```jsx
 <div>
-    <FogAccordionCircles className="darkMode"/>
+    <FogAccordionCircles className="colorFilled"/>
     {...}
 </div>
 ```

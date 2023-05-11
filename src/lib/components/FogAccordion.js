@@ -24,7 +24,11 @@ export function FogAccordion(props) {
     });
   };
   return (
-    <div className={`fog-accordion ${props.darkMode ? 'darkMode' : ''}`}>
+    <div
+      className={`fog-accordion ${props.darkMode ? 'darkMode' : ''} ${
+        props.colorFilled ? 'colorFilled' : ''
+      }`}
+    >
       {renderChildren()}
     </div>
   );

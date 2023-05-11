@@ -8,6 +8,12 @@
   min-height: 100vh;
 }
 
-.darkMode.fog-accordion-background-wrapper {
+.colorFilled.fog-accordion-background-wrapper {
   background: linear-gradient(115deg, #17061a 0%, #030f0f 105%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .darkMode.fog-accordion-background-wrapper {
+    background: linear-gradient(115deg, #17061a 0%, #030f0f 105%);
+  }
 }
