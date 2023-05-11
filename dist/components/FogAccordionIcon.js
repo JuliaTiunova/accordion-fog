@@ -1,20 +1,13 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.FogAccordionIcon = FogAccordionIcon;
-var _react = _interopRequireDefault(require("react"));
-require("./styles/FogAccordionIcon.css");
-var _reactFontawesome = require("@fortawesome/react-fontawesome");
-var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-function FogAccordionIcon(props) {
-  return /*#__PURE__*/_react.default.createElement("button", {
+import React from 'react';
+import './styles/FogAccordionIcon.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+export function FogAccordionIcon(props) {
+  return /*#__PURE__*/React.createElement("button", {
     className: "fog-accordion-button"
-  }, /*#__PURE__*/_react.default.createElement("span", {
+  }, /*#__PURE__*/React.createElement("span", {
     className: "fog-accordion-icon "
-  }, props.icon || props.children || /*#__PURE__*/_react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
-    icon: _freeSolidSvgIcons.faArrowDown
+  }, props.icon || props.children || /*#__PURE__*/React.createElement(FontAwesomeIcon, {
+    icon: faArrowDown
   })));
 }

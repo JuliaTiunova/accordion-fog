@@ -1,12 +1,4 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.applyCubeAnimation = applyCubeAnimation;
-exports.applyRegularAnimation = applyRegularAnimation;
-var _gsap = _interopRequireDefault(require("gsap"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+import gsap from 'gsap';
 function applyRegularAnimation(_ref) {
   let {
     opened,
@@ -14,8 +6,8 @@ function applyRegularAnimation(_ref) {
     wrapper
   } = _ref;
   if (opened) {
-    _gsap.default.context(() => {
-      timeline.current = _gsap.default.timeline().to(wrapper.current, {
+    gsap.context(() => {
+      timeline.current = gsap.timeline().to(wrapper.current, {
         opacity: 1,
         duration: 0.2
       }).to(wrapper.current, {
@@ -24,8 +16,8 @@ function applyRegularAnimation(_ref) {
       }, '<');
     });
   } else {
-    _gsap.default.context(() => {
-      timeline.current = _gsap.default.timeline({
+    gsap.context(() => {
+      timeline.current = gsap.timeline({
         defaults: {
           duration: 0.5
         }
@@ -49,8 +41,8 @@ function applyCubeAnimation(_ref2) {
     cubeBox
   } = _ref2;
   if (opened) {
-    _gsap.default.context(() => {
-      timeline.current = _gsap.default.timeline({
+    gsap.context(() => {
+      timeline.current = gsap.timeline({
         defaults: {
           duration: 0.5
         }
@@ -68,8 +60,8 @@ function applyCubeAnimation(_ref2) {
       }, '<');
     });
   } else {
-    _gsap.default.context(() => {
-      timeline.current = _gsap.default.timeline({
+    gsap.context(() => {
+      timeline.current = gsap.timeline({
         defaults: {
           duration: 0.5
         }
@@ -89,3 +81,4 @@ function applyCubeAnimation(_ref2) {
     });
   }
 }
+export { applyRegularAnimation, applyCubeAnimation };
