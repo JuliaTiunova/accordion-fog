@@ -1,4 +1,7 @@
 {
+  "assumptions": {
+    "enumerableModuleMeta": true
+  },
   "presets": [
     [
       "@babel/preset-env",
@@ -9,7 +12,6 @@
           "chrome": "67",
           "safari": "11.1"
         },
-        "modules": false,
         "useBuiltIns": "usage",
         "corejs": "3.6.5"
       }
