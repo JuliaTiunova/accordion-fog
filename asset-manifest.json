@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/accordion-fog/static/css/main.db915046.css",
-    "main.js": "/accordion-fog/static/js/main.8f179f49.js",
+    "main.css": "/accordion-fog/static/css/main.8cb4f62a.css",
+    "main.js": "/accordion-fog/static/js/main.f473c53c.js",
     "index.html": "/accordion-fog/index.html",
-    "static/media/arrow.svg": "/accordion-fog/static/media/arrow.b56a6f657ee6fc806f704f8ea3dbb8a5.svg",
-    "main.db915046.css.map": "/accordion-fog/static/css/main.db915046.css.map",
-    "main.8f179f49.js.map": "/accordion-fog/static/js/main.8f179f49.js.map"
+    "main.8cb4f62a.css.map": "/accordion-fog/static/css/main.8cb4f62a.css.map",
+    "main.f473c53c.js.map": "/accordion-fog/static/js/main.f473c53c.js.map"
   },
   "entrypoints": [
-    "static/css/main.db915046.css",
-    "static/js/main.8f179f49.js"
+    "static/css/main.8cb4f62a.css",
+    "static/js/main.f473c53c.js"
   ]
 }
