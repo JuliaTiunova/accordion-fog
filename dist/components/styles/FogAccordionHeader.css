@@ -9,11 +9,18 @@
   z-index: 3;
 }
 
-.darkMode .fog-accordion-header {
+.fog-accordion-header:hover {
+  cursor: pointer;
+}
+
+.colorFilled .fog-accordion-header {
   color: white;
   background-color: rgba(75, 75, 75, 0.3);
 }
 
-.fog-accordion-header:hover {
-  cursor: pointer;
+@media (prefers-color-scheme: dark) {
+  .darkMode .fog-accordion-header {
+    color: white;
+    background-color: rgba(75, 75, 75, 0.3);
+  }
 }

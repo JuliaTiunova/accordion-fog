@@ -7,6 +7,7 @@
 .fog-accordion-icon svg {
   width: 15px;
   height: 15px;
+  stroke: #333;
   color: #333;
   transform: rotate(0deg);
   transition: 0.3s ease-in-out;
@@ -17,11 +18,13 @@
 }
 
 .colorFilled .fog-accordion-icon svg {
+  stroke: white;
   color: white;
 }
 
 @media (prefers-color-scheme: dark) {
   .darkMode .fog-accordion-icon svg {
+    stroke: white;
     color: white;
   }
 }

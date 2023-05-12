@@ -9,7 +9,8 @@ function applyRegularAnimation(_ref) {
   let {
     opened,
     timeline,
-    wrapper
+    wrapper,
+    maxHeight
   } = _ref;
   if (opened) {
     _gsap.default.context(() => {
@@ -17,7 +18,7 @@ function applyRegularAnimation(_ref) {
         opacity: 1,
         duration: 0.2
       }).to(wrapper.current, {
-        maxHeight: '300px',
+        maxHeight: maxHeight || '500px',
         duration: 1
       }, '<');
     });

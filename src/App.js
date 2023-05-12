@@ -2,7 +2,6 @@ import './App.css';
 import {
   FogAccordion,
   FogAccordionBackground,
-  FogAccordionCircles,
   FogAccordionContent,
   FogAccordionHeader,
   FogAccordionIcon,

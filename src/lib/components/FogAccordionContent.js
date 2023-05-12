@@ -6,6 +6,7 @@ import { applyCubeAnimation, applyRegularAnimation } from './animationHelpers';
 export function FogAccordionContent(props) {
   const timeline = useRef();
   const opened = props.opened;
+  const maxHeight = props.maxHeight || null;
 
   // for regular animation
   const wrapper = useRef();
@@ -14,6 +15,7 @@ export function FogAccordionContent(props) {
     opened,
     timeline,
     wrapper,
+    maxHeight,
   };
 
   // for cube animation

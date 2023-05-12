@@ -1,16 +1,38 @@
-.cube.fog-accordion-face {
-  padding: 0 20px;
-}
-
 .reg.fog-accordion-content {
   padding: 0 20px;
   background-color: white;
   max-height: 0;
   border: 1px solid #333;
   opacity: 0;
+  overflow-y: auto;
 }
 
-.darkMode .reg.fog-accordion-content {
+/* scrollbar for content */
+.reg.fog-accordion-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.reg.fog-accordion-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.reg.fog-accordion-content::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border-radius: 5px;
+}
+
+.reg.fog-accordion-content::-webkit-scrollbar-thumb:hover {
+  background: #d0d0d0;
+}
+
+.colorFilled .reg.fog-accordion-content {
   background-color: #111;
   border: 1px solid #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .darkMode .reg.fog-accordion-content {
+    background-color: #111;
+    border: 1px solid #fff;
+  }
 }

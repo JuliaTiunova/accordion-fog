@@ -25,6 +25,7 @@
 }
 
 .cube.fog-accordion-face {
+  padding: 0 20px;
   position: absolute;
   width: 100%;
   height: 200px;
@@ -38,19 +39,10 @@
   transform: rotateY(0deg) translateZ(100px);
 }
 
-.darkMode .cube.fog-accordion-face-front {
-  background-color: #111;
-  border: 1px solid #fff;
-}
-
 .cube.fog-accordion-face-bottom {
   opacity: 0;
   background-color: rgba(245, 245, 245, 0.6);
   transform: rotateX(-90deg) translateZ(100px);
-}
-
-.darkMode .cube.fog-accordion-face-bottom {
-  background-color: rgba(37, 32, 33, 0.6);
 }
 
 /* scrollbar for content */
@@ -71,11 +63,40 @@
   background: #d0d0d0;
 }
 
-.darkMode .cube.fog-accordion-face::-webkit-scrollbar-thumb {
+.colorFilled .cube.fog-accordion-face-front {
+  background-color: #111;
+  border: 1px solid #fff;
+}
+
+.colorFilled .cube.fog-accordion-face-bottom {
+  background-color: rgba(37, 32, 33, 0.6);
+}
+
+.colorFilled .cube.fog-accordion-face::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 5px;
 }
 
-.darkMode .cube.fog-accordion-face::-webkit-scrollbar-thumb:hover {
+.colorFilled .cube.fog-accordion-face::-webkit-scrollbar-thumb:hover {
   background: #3f3f3f;
+}
+
+@media (prefers-color-scheme: dark) {
+  .darkMode .cube.fog-accordion-face-front {
+    background-color: #111;
+    border: 1px solid #fff;
+  }
+
+  .darkMode .cube.fog-accordion-face-bottom {
+    background-color: rgba(37, 32, 33, 0.6);
+  }
+
+  .darkMode .cube.fog-accordion-face::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+  }
+
+  .darkMode .cube.fog-accordion-face::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f;
+  }
 }

@@ -104,6 +104,14 @@ Accordion is closed by default, each item can be toggled
 </FogAccordion>
 ```
 
+Default regular `FogAccordionContent` max-height is set to 500px, to change max-height value pass the `maxHeight` prop to `FogAccordionContent`. Overflow is set to auto.
+
+```jsx
+<FogAccordionContent maxHeight={'300px'}>
+  {...}
+</FogAccordionContent>
+```
+
 To make multiple accordion items be visible at the same time, pass the `multipleToggle` prop
 
 ```jsx
@@ -161,4 +169,20 @@ There is a possibility to use animated circles on the background, just add `FogA
     <FogAccordionCircles className="colorFilled"/>
     {...}
 </div>
+```
+
+To change arrow icon pass `icon` prop to `FogAccordionIcon` after importing it as a ReactComponent
+
+```jsx
+<FogAccordionIcon icon={<Arrow />}>
+  {...}
+</FogAccordionIcon>
+```
+
+Or pass icon component as a child
+
+```jsx
+<FogAccordionIcon>
+  <Arrow />
+</FogAccordionIcon>
 ```

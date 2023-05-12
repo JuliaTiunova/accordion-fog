@@ -13,13 +13,15 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 function FogAccordionContent(props) {
   const timeline = (0, _react.useRef)();
   const opened = props.opened;
+  const maxHeight = props.maxHeight || null;
 
   // for regular animation
   const wrapper = (0, _react.useRef)();
   const options = {
     opened,
     timeline,
-    wrapper
+    wrapper,
+    maxHeight
   };
 
   // for cube animation

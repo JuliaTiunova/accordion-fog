@@ -19,6 +19,9 @@
     "type": "git",
     "url": "git+https://github.com/JuliaTiunova/accordion-fog.git"
   },
+  "bugs": {
+    "url": "https://github.com/JuliaTiunova/accordion-fog/issues"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",

@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-function applyRegularAnimation({ opened, timeline, wrapper }) {
+function applyRegularAnimation({ opened, timeline, wrapper, maxHeight }) {
   if (opened) {
     gsap.context(() => {
       timeline.current = gsap
@@ -9,7 +9,7 @@ function applyRegularAnimation({ opened, timeline, wrapper }) {
         .to(
           wrapper.current,
           {
-            maxHeight: '300px',
+            maxHeight: maxHeight || '500px',
             duration: 1,
           },
           '<'

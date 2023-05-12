@@ -32,6 +32,6 @@ function FogAccordion(props) {
     });
   };
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "fog-accordion ".concat(props.darkMode ? 'darkMode' : '')
+    className: "fog-accordion ".concat(props.darkMode ? 'darkMode' : '', " ").concat(props.colorFilled ? 'colorFilled' : '')
   }, renderChildren());
 }
